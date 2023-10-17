@@ -5,11 +5,13 @@ import random
 import math
 
 def statsa():
-    '''d6_1 = random.randrange(1,7)
+    d6_1 = random.randrange(1,7)
     d6_2 = random.randrange(1,7)
     d6_3 = random.randrange(1,7)
     d6_4 = random.randrange(1,7)
-    return ((d6_1 + d6_2 + d6_3 + d6_4) - min(d6_1, d6_2, d6_3, d6_4))'''
+    return ((d6_1 + d6_2 + d6_3 + d6_4) - min(d6_1, d6_2, d6_3, d6_4))
+    
+def statst():
     d6_1 = random.randrange(1,7)
     if d6_1 == 1 or d6_1 == 2:
         d6_1 = random.randrange(1,7)
@@ -37,7 +39,7 @@ def statsb():
     return (d6_1 + d6_2 + d6_3)
 
 def main():
-    aorb = input("rolling system a or b: ")
+    aorb = input("rolling system a, b or t: ")
     if aorb == "a":
         strength = statsa()
         dexterity = statsa()
@@ -52,6 +54,13 @@ def main():
         intelligence = statsb()
         charisma = statsb()
         wisdom = statsb()
+    elif aorb == "t":
+        strength = statst()
+        dexterity = statst()
+        constitution = statst()
+        intelligence = statst()
+        charisma = statst()
+        wisdom = statst()
     strengthMod = math.floor((strength - 10) / 2)
     if strengthMod >= 0:
         strengthMod = f"+{strengthMod}"

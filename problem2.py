@@ -7,7 +7,7 @@ import random
 
 def play():
     number = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
-    siuts = ['spades','clubs','hearts','dimonds']
+    siuts = ['hearts','dimonds','clubs','spades']
     dec = []
     plyer1 = []
     plyer2 = []
