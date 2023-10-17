@@ -17,6 +17,6 @@ def main():
     intelligence = stats()
     charisma = stats()
     wisdom = stats()
-    print(f"your strength is {strength}, your dexterity is {dexterity}, your constitution is {constitution}, your intelligence is {intelligence}, your charisma is {charisma}, your wisdom is {wisdom}, ")
+    print(f"your strength is {strength}, your dexterity is {dexterity}, your constitution is {constitution}, your intelligence is {intelligence}, your charisma is {charisma}, your wisdom is {wisdom}.")
 
 main()
